@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# PyTorch / TensorFlow model weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Data
+data/
+*.zip
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
