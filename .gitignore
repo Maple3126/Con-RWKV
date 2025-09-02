@@ -3,5 +3,6 @@
 *.ckpt
 *.env
 __pycache__/
+wandb/
 output/
 *.log
