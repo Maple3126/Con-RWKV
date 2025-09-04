@@ -51,7 +51,7 @@ The data can be modified in dataset2.py, for both train and eval.
 ## RWKV-ICL
 1. Use ```datanew.py``` to generate binary toy data following a Dirichlet distribution. Each subsequent token is generated based on the preceding k tokens, where k can be set by modifying the ```if_main_``` section.
 The initial k tokens, however, are sampled from a uniform distribution.
-2.As the experiments are based on RWKV-6, the ```demo-training-run.sh``` script is executed within the ```RWKVLM/RWKV_v5``` directory.
+2. As the experiments are based on RWKV-6, the ```demo-training-run.sh``` script is executed within the ```RWKVLM/RWKV_v5``` directory.
 
 The internal settings of the ```.sh``` file are mostly similar to those in RWKV-ASR. The only point to note is that when switching to toy data with a different order, it is safer to manually clear the contents of ```data/markov-binidx.``` 
 In addition, the convolution kernel size should be set to $\geq k+1$ for the loss to decrease significantly.
